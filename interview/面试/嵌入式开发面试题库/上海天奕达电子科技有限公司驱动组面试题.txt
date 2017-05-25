@@ -1,0 +1,24 @@
+						驱动试题			
+
+
+
+1：用预处理指令#define声明一个常数，用以声明1年中有多少秒（忽略闰年）（5分）
+2：写一个“标准”宏MIN，这个宏输入两个参数并返回较小的那一个。（5分）
+3：说说你对RTOS的理解。Task有几种状态？什么是死锁（dead lock）? (10分)
+4：谈谈volatile与register修饰符的作用？（10分）
+5：在编译器编译时，一般在单片机ram中分为哪几个变量存储区？顺便说说你对堆栈的理解？（10分）
+6：单片机中的FLASH、RAM、ROM有什么区别？（10分）
+7：一条地址线按16位数据寻址，22根地址线的寻址空间是多少Mbyte?写出算法（15分）
+8：在windows 32位机下，写出运行结果（15分）
+char str[] = "Koobee"; char *p = str; int i =10;
+
+sizeof(str) =()
+sizeof(p) = ()
+sizeof(n) = ()
+
+void func(char str[10]){}
+
+sizeof(str) = ()
+sizeof(sizeof(str)) = ()
+
+9:陈述一下你所了解的到的android和linux，以及你对android和linux的理解。（20分）

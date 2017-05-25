@@ -1,0 +1,24 @@
+String2Bytes(unsigned char* szSrc, unsigned char* pDst, int nDstMaxLen)     
+{  
+    if(szSrc == NULL)  
+    {  
+        return 0;  
+    }  
+    int iLen = strlen((char *)szSrc);  
+    if (iLen <= 0 || iLen%2 != 0 || pDst == NULL || nDstMaxLen < iLen/2)  
+    {  
+        return 0;  
+    }  
+      
+    iLen /= 2;  
+    strupr((char *)szSrc);  
+    for (int i=0; i<iLen; i++)  
+    {  
+        int iVal = 0;  
+        unsigned char *pSrcTemp = szSrc + i*2;  
+        sscanf((char *)pSrcTemp, "%02x", &iVal);  
+        pDst[i] = (unsigned char)iVal;  
+    }  
+      
+    return iLen;  
+}  

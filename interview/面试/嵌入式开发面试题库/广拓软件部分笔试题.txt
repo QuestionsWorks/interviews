@@ -1,0 +1,33 @@
+笔试
+1.ifndef\define\endif 作用
+
+2.不用库函数实现strcpy
+
+3.用TCP/IP协议实现发送一串字符，分成服务器和客户端
+
+4.c++的重载和重装的区别
+
+5.分别实现setbit(int x,unsigned char n)和clearbit(int x,unsigned char n)
+    setbit 是让x的n位置一 ，clearbit 是让x 的n位清0
+选择判断记不清了
+
+面试题
+1.改错并修改
+void Get_str(char *p1)
+{
+	p1 = malloc(20);
+
+	return;	
+}
+
+void main()
+{
+	char *p1 = NULL;
+
+	p1 = Get_str(p1);
+	printf("p1:%s",p1);
+}
+
+2.单项链表的增加和删除
+
+3.gcc交叉工具链

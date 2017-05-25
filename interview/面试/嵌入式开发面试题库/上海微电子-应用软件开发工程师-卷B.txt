@@ -1,0 +1,86 @@
+
+应用软件开发工程师  试卷B
+
+翻译
+1、clock capability
+
+2、spooling
+
+
+
+以下代码有什么缺点
+typedef struct
+{
+	struct
+	{
+		short a;
+		short b;
+	}sub;
+	int c;
+}test_t;
+
+void main(void)
+{
+	test_t test;
+	scanf("%d", &test.sub.a);
+	scanf("%d", &test.sub.b);
+	scanf("%d", &test.c);
+	printf("%d\n", test.sub.a);
+	printf("%d\n", test.sub.b);
+	printf("%d\n", test.c);
+}
+
+
+c++标准库组件
+protected和private的区别
+重载 = [] ()  -> 时的限制
+
+
+在c源文件使用extern ”C”的作用，写例子
+
+
+字节对齐的含义与意义
+
+
+将一个int的变量的第四位置一、清除
+#define SET_BIT4(x)  ___________
+#define CLR_BIT4(x)  ___________
+
+
+宏定义求绝对值
+#define ABS(x)  _____________
+
+
+const、枚举和宏定义常量的区别
+
+
+定义一个函数指针 int func(int);
+定义一个函数指针数组a
+定义一个指向a的函数指针
+
+
+
+预测输出结果，指出错误
+char * sub_func(char * str)
+{
+	const char * sub_p1 = "Hello!";
+	char  sub_p2[32] = "Welcome!";
+	str = sub_p1;
+	return sub_p2;
+}
+void main(void)
+{
+	char * main_p1, *main_p2;
+	main_p2 = sub_func(main_p1);
+	printf("p1 = %s \n", main_p1);
+	printf("p2 = %s \n", main_p2);
+}
+
+
+分析冒泡排序的时间复杂度、空间复杂度，并编写函数实现冒泡排序
+
+
+在C/C++程序中，在main函数之前是否可执行其他代码，在main结束之后是否可执行其他代码，如果不能，请说明理由，如果能，请写例子
+
+
+

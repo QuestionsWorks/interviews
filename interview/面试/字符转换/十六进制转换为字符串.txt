@@ -1,0 +1,26 @@
+void Hex2Str( const char *sSrc,  char *sDest, int nSrcLen )
+{
+    int  i;
+    char szTmp[3];
+
+
+     for( i = 0; i < nSrcLen; i++ )
+    {
+		if(sSrc[i] >= 0x0 && sSrc[i] < 0x10)
+		{
+			//sprintf( szTmp, "%X", (unsigned char) sSrc[i] );
+			memcpy( &sDest[i * 2], "0", 1 );
+			sprintf( szTmp, "%x", (unsigned char) sSrc[i] );
+			memcpy( &sDest[i * 2+1], szTmp, 1 );
+
+		}
+		else
+		{
+			sprintf( szTmp, "%x", (unsigned char) sSrc[i] );
+			memcpy( &sDest[i * 2], szTmp, 2 );
+		}
+		
+    }
+    return ;
+}
+ 
